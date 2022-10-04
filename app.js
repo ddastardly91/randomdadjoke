@@ -6,3 +6,12 @@ button.addEventListener("click", async () => {
   const req = await axios.get("https://icanhazdadjoke.com/", config);
   jokeText.textContent = req.data.joke;
 });
+
+(async () => {
+  await tsParticles.load("tsparticles", {
+    background: {
+      opacity: 0,
+    },
+    preset: "snow",
+  });
+})();
